@@ -1,0 +1,12 @@
+spring:
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+  liquibase:
+    change-log: classpath:db/liquibase/changelog-master.yaml
+    enabled: true
+  datasource:
+    url: jdbc:postgresql://localhost:5433/payment-limits
+    username: postgres
+    password: postgres
