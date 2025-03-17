@@ -1,0 +1,12 @@
+server:
+  servlet:
+    context-path: /payment-limits
+  port: 8080
+
+spring:
+  main:
+    banner-mode: off
+  config:
+    import:
+      - classpath:/configs/database-config.yml
+      - classpath:/configs/misc-config.yml
